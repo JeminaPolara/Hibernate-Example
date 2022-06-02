@@ -12,7 +12,7 @@ import javax.persistence.Table;
 /**
  * When use @Inheritance SINGLE_TABLE then use @DiscriminatorValue
  * */
-//@DiscriminatorValue(value = "Truck")
+@DiscriminatorValue(value = "Truck")
 public class Truck extends Vehicle{
 
     private String capacity;
