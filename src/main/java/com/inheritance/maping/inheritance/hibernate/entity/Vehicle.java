@@ -7,13 +7,13 @@ import org.hibernate.annotations.GeneratorType;
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 /**
  * When use SINGLE_TABLE then use @DiscriminatorColumn and comment abstract keyword
  * */
-//@DiscriminatorColumn(name = "VEHICLE_TYPES", discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorColumn(name = "VEHICLE_TYPES", discriminatorType = DiscriminatorType.STRING)
 @NoArgsConstructor
-public /*abstract*/ class Vehicle {
+public abstract class Vehicle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

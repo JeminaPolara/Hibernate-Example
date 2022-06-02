@@ -2,12 +2,9 @@ package com.inheritance.maping.inheritance.hibernate;
 
 import com.inheritance.maping.inheritance.hibernate.entity.Car;
 import com.inheritance.maping.inheritance.hibernate.entity.Truck;
-import com.inheritance.maping.inheritance.hibernate.entity.Vehicle;
 import com.inheritance.maping.inheritance.hibernate.repository.CarRepository;
 import com.inheritance.maping.inheritance.hibernate.repository.TruckRepository;
-import com.inheritance.maping.inheritance.hibernate.repository.VehicleRepository;
 import com.inheritance.maping.inheritance.hibernate.type.VehicleType;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -22,7 +19,6 @@ public class InheritanceHibernateApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(InheritanceHibernateApplication.class, args);
-
 
 
 //        VehicleRepository vehicleRepository = context.getBean(VehicleRepository.class);
