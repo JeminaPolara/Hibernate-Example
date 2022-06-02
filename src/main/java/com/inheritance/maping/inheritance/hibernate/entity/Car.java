@@ -5,13 +5,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Entity
 /**
  * When use @Inheritance SINGLE_TABLE then use @DiscriminatorValue
  * */
-//@DiscriminatorValue(value = "CAR")
+@DiscriminatorValue(value = "CAR")
 @NoArgsConstructor
 public class Car extends Vehicle{
 
