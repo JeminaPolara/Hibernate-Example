@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
  * When use @Inheritance TABLE_PER_CLASS then use @Primary
  * */
 //@Repository
-@Primary
+//@Primary
 public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
 }

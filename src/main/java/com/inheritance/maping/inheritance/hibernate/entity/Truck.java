@@ -1,7 +1,10 @@
 package com.inheritance.maping.inheritance.hibernate.entity;
 
 import com.inheritance.maping.inheritance.hibernate.type.VehicleType;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
@@ -11,7 +14,10 @@ import javax.persistence.Entity;
 /**
  * When use @Inheritance SINGLE_TABLE then use @DiscriminatorValue
  * */
-@DiscriminatorValue(value = "Truck")
+@Getter
+@Setter
+@ToString
+//@DiscriminatorValue(value = "Truck")
 public class Truck extends Vehicle{
 
     private String capacity;
